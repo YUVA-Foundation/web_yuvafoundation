@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>YUVA Foundation is an NGO based on an uncompromising and robust value system.</title>
+		<meta name="description" content="Yuva foundations">
+		<meta name="author" content="yuva foundations">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="logo.png">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<link href="css/w3school.css" rel="stylesheet"> 
+		<link href="css/custom.css" rel="stylesheet">
+		<style>
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+}
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+		
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+
+figure.effect-ravi {
+    background: #303fa9;
+    margin: 0;
+}
+
+.grid [class^="col"] {
+    padding: 2px;
+}
+
+figure.effect-ravi h2 {
+    font-size: 158.75%;
+}
+
+figure.effect-ravi h2,
+figure.effect-ravi p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+
+figure.effect-ravi figcaption::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+}
+
+figure.effect-ravi p {
+    width: 100px;
+    text-transform: none;
+    font-size: 121%;
+    line-height: 2;
+}
+
+figure.effect-ravi p a {
+    color: #fff;
+}
+
+figure.effect-ravi p a:hover,
+figure.effect-ravi p a:focus {
+    opacity: 0.6;
+}
+
+figure.effect-ravi p a i {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-ravi p a:first-child i {
+    -webkit-transform: translate3d(-60px, -60px, 0);
+    transform: translate3d(-60px, -60px, 0);
+}
+
+figure.effect-ravi p a:nth-child(2) i {
+    -webkit-transform: translate3d(60px, -60px, 0);
+    transform: translate3d(60px, -60px, 0);
+}
+
+figure.effect-ravi p a:nth-child(3) i {
+    -webkit-transform: translate3d(-60px, 60px, 0);
+    transform: translate3d(-60px, 60px, 0);
+}
+
+figure.effect-ravi p a:nth-child(4) i {
+    -webkit-transform: translate3d(60px, 60px, 0);
+    transform: translate3d(60px, 60px, 0);
+}
+
+figure.effect-ravi:hover figcaption::before {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+}
+
+figure.effect-ravi:hover h2 {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+    transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+}
+
+figure.effect-ravi:hover p i:empty {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* just because it's stronger than nth-child */
+    opacity: 1;
+}
+.pt-100{
+    padding-top:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title p {
+	color: #777;
+	font-size: 16px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+.section-title h4:after {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+
+.single-team img {
+  width: 100%;
+}
+.single-team {
+  position: relative;
+}
+.team-hover {
+  background-color: #222;
+  color: #fff;
+  position: absolute;
+  bottom: -107px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: .4s;
+  transition:.4s
+}
+.team-hover h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.team-hover h4 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.team-hover a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 5px;
+}
+.single-team:hover .team-hover {
+  bottom: 0;
+}
+.single-team {
+  overflow: hidden;
+}
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.filter-button.active
+{
+    background-color: #42B32F;
+    color: white;
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+/******************* Timeline Demo - 5 *****************/
+.main-timeline5{overflow:hidden;position:relative}
+.main-timeline5 .timeline{position:relative;margin-top:-79px}
+.main-timeline5 .timeline:first-child{margin-top:0}
+.main-timeline5 .timeline-icon,.main-timeline5 .year{margin:auto;position:absolute;top:0;left:0;bottom:0;right:0}
+.main-timeline5 .timeline:after,.main-timeline5 .timeline:before{content:"";display:block;width:100%;clear:both}
+.main-timeline5 .timeline:before{content:"";width:100%;height:100%;box-shadow:-8px 0 5px -5px rgba(0,0,0,.5) inset;position:absolute;top:0;right:0;z-index:2}
+.main-timeline5 .timeline-icon{width:210px;height:210px;border-radius:50%;border:25px solid transparent;border-top-color:#f44556;border-right-color:#f44556;z-index:1;transform:rotate(45deg)}
+.main-timeline5 .year{display:block;width:110px;height:110px;line-height:110px;border-radius:50%;background:#fff;box-shadow:0 0 20px rgba(0,0,0,.4);font-size:30px;font-weight:700;color:#f44556;text-align:center;transform:rotate(-45deg)}
+.main-timeline5 .timeline-content{width:35%;float:right;background:#f44556;padding:30px 20px;margin:50px 0;z-index:1;position:relative}
+.main-timeline5 .timeline-content:before{content:"";width:20%;height:15px;background:#f44556;position:absolute;top:50%;left:-20%;z-index:-1;transform:translateY(-50%)}
+.main-timeline5 .title{font-size:20px;font-weight:700;color:#fff;margin:0 0 10px}
+.main-timeline5 .description{font-size:16px;color:#fff;line-height:24px;margin:0}
+.main-timeline5 .timeline:nth-child(2n):before{box-shadow:8px 0 5px -5px rgba(0,0,0,.5) inset}
+.main-timeline5 .timeline:nth-child(2n) .timeline-icon{transform:rotate(-135deg);border-top-color:#e97e2e;border-right-color:#e97e2e}
+.main-timeline5 .timeline:nth-child(2n) .year{transform:rotate(135deg);color:#e97e2e}
+.main-timeline5 .timeline:nth-child(2n) .timeline-content{float:left}
+.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{left:auto;right:-20%}
+.main-timeline5 .timeline:nth-child(2n) .timeline-content,.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{background:#e97e2e}
+.main-timeline5 .timeline:nth-child(3n) .timeline-icon{border-top-color:#13afae;border-right-color:#13afae}
+.main-timeline5 .timeline:nth-child(3n) .year{color:#13afae}
+.main-timeline5 .timeline:nth-child(3n) .timeline-content,.main-timeline5 .timeline:nth-child(3n) .timeline-content:before{background:#13afae}
+.main-timeline5 .timeline:nth-child(4n) .timeline-icon{border-top-color:#105572;border-right-color:#105572}
+.main-timeline5 .timeline:nth-child(4n) .year{color:#105572}
+.main-timeline5 .timeline:nth-child(4n) .timeline-content,.main-timeline5 .timeline:nth-child(4n) .timeline-content:before{background:#105572}
+@media only screen and (max-width:1199px){.main-timeline5 .timeline{margin-top:-103px}
+.main-timeline5 .timeline-content:before{left:-18%}
+.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{right:-18%}
+}
+@media only screen and (max-width:990px){.main-timeline5 .timeline{margin-top:-127px}
+.main-timeline5 .timeline-content:before{left:-2%}
+.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{right:-2%}
+}
+@media only screen and (max-width:767px){.main-timeline5 .timeline{margin-top:0;overflow:hidden}
+.main-timeline5 .timeline:before,.main-timeline5 .timeline:nth-child(2n):before{box-shadow:none}
+.main-timeline5 .timeline-icon,.main-timeline5 .timeline:nth-child(2n) .timeline-icon{margin-top:-30px;margin-bottom:20px;position:relative;transform:rotate(135deg)}
+.main-timeline5 .timeline:nth-child(2n) .year,.main-timeline5 .year{transform:rotate(-135deg)}
+.main-timeline5 .timeline-content,.main-timeline5 .timeline:nth-child(2n) .timeline-content{width:100%;float:none;border-radius:0 0 20px 20px;text-align:center;padding:25px 20px;margin:0 auto}
+.main-timeline5 .timeline-content:before,.main-timeline5 .timeline:nth-child(2n) .timeline-content:before{width:15px;height:25px;position:absolute;top:-22px;left:50%;z-index:-1;transform:translate(-50%,0)}
+}
+h1{
+color:#00cbfe;
+}
+p{
+color:#fff;}
+
+#popup_content_wrap {
+width: 100%;
+    height: 100%;   
+    top: 0;
+    left: 0;   
+ position: fixed;	
+    background: rgba(0, 0, 0, 0.74);
+    z-index: 9999999;
+}
+#popup_content {
+    width: 25%;
+    height: 600px;
+    padding:20px;
+	 position: relative;
+	top: 10%;
+    left: 36%;
+    background: #1b100ed9;
+    border: 10px solid #00cbfe;  
+   
+    
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+		</style>
+
+<!---page load popup_content---->
+<!--<div id="popup_content_wrap" style='display:none'>
+    <div id="popup_content">
+        <center>
+              
+			 <p><a href="https://girlscript.tech/digitalvidarbha"><img src="001.png" width: 50%;  height:50%;></a></p>
+            <input type="submit" name="submit" value="Continue" class="btn btn-primary" onClick="popup_content('hide')" />
+        </center>
+    </div>
+</div>-->
+	<body class="no-trans" style="padding-top:140px; font-size: 16px;">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="index.html"><img id="logo" src="images/looog.png" alt="Yuva" ></a>
+							</div>
+
+							
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					
+					
+					
+					<div class="col-md-10" class="navbar navbar-inverse">
+					
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+							<nav class="navbar navbar-default" role="navigation">
+									<div >
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="index.html">Home</a></li>
+												<li class="dropdown-submenu">
+                    <a href="#" data-toggle="dropdown" > <span class="nav-label">About</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mission.html">Vission & Mission</a></li>
+                        <li><a href="team.html">Team & Board</a></li>
+                       <!-- <li><a href="#">Our Supporters</a></li>-->
+                         <!--<li><a href="event2017.html">Events-2017</a>
+                        <li><a href="Social.html">Social Contribution</a></li>
+                       <li><a href="#">video</a></li>-->
+                       
+                    </ul>
+                </li>
+												<!--<li><a href="#Skill"></a></li>-->
+											<!--<li><a href="#Updates">	Social Contribution & Glimpses</a></li>-->
+												<li class="dropdown-submenu">
+                    <a href="#" data-toggle="dropdown" > <span class="nav-label">Social & Glimpses</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="event2021.html">Events-2021</a></li>
+                        <li><a href="event2020.html">Events-2020</a></li>
+                        <li><a href="event2019.html">Events-2019</a></li>
+                        <li><a href="event2018.html">Events-2018</a></li>
+                        <li><a href="event2017.html">Events-2017</a></li>
+                         <li><a href="event2016.html">Events-2016</a></li>
+                         <li><a href="event2015.html">Events-2015</a></li>
+                           <li><a href="event2014.html">Events-2014</a></li>
+                        <li><a href="Social.html">Social Contribution</a></li>
+                        <!--<li><a href="#">video</a></li>-->
+                       
+                    </ul>
+                </li>
+                	<!--<li><a href="JobUpdates.html">Job Updates </a></li>-->
+                <li class="dropdown-submenu">
+                    <a href="JobUpdates.html" data-toggle="dropdown" > <span class="nav-label">Job Updates</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="JobFairs.html">Job Fairs </a></li>
+                        <li><a href="Placement-Drive.html">Placement Drive</a></li>
+                        <li><a href="HRMeet.html">HR & TPO Meet</a></li>
+                    </ul>
+                </li>
+												<li><a href="Placement-Drive.html">Placement  </a></li>
+											<li><a href="Pressrelease.html">Press Release </a></li>
+								            <li><a href="membership.html">Membership</a></li>
+                                            <li><a href="donation.html">Donation</a></li>
+									
+												<li><a href="#contact">Contact Us</a></li>
+											
+											</ul>
+											
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+
+		<!-- banner start --> 
+	<html><head></head><body>
+<section >
+			<div >
+				<h1 id="Updates" class="title text-center" style="text-shadow: 2px 2px 2px #131211a1;
+    font-size: 3em;
+    color: #fec527;
+    font-weight: 700;"> Donation for YUVA Foundation</h1>
+    </section>
+	    <br><br>
+	    <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="table-responsive">
+        
+      <center>  <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Fz6FNXUlJlyUQE"> </script> </form>   </center> 
+      </div>
+    </div>
+  </div>
+</div>
+
+</body></html>
+ <br><br>		
+	
+		
+		<footer id="footer">
+
+			<!-- .footer start --> 
+			<div class="footer section">
+				<div class="container">
+				<h1 class="title text-center" id="contact">Contact Us</h1>
+					<div class="row">
+							<div class="col-sm-6">
+							<div class="footer-content">
+							<h3 style="color: #ffffff;">Contact Form</h3>
+								<form role="form" id="footer-form" action="email.php">
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="name">Name</label>
+										<input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+										<i class="fa fa-user form-control-feedback"></i>
+									</div>
+
+                                                                 	<div class="form-group has-feedback">
+								<label class="sr-only" for="phone">Mobile Number</label>
+								<input type="text" class="form-control" id="name" placeholder="Mobile No." name="number" required>
+										<i class="fa fa-phone form-control-feedback"></i>
+									</div>
+             
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="email">Email address</label>
+										<input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+										<i class="fa fa-envelope form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="message">Message</label>
+										<textarea class="form-control" rows="8" id="message" placeholder="Message" name="message" required></textarea>
+										<i class="fa fa-pencil form-control-feedback"></i>
+									</div>
+									<input id="submit" type="submit" value="Send" class="btn btn-default">
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-sm-6">
+					<h3 ></h3><br>
+							<div class="footer-content">
+								
+
+							<div class="widget-content">
+
+								<p class="contacts" style="color:#ffffff;">
+								<i class="fa fa-map-marker" style="font-size:24px;color:#ffffff"></i>&nbsp; YUVA Foundation
+<br>	&nbsp;	&nbsp;	&nbsp;88-B ,Bajrang Nagar
+<br>	&nbsp;	&nbsp;	&nbsp;Near Padole Medical 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nagpur-440027 .</p>
+
+								<p class="contacts" style="color:#ffffff;"> <i class="fa fa-mobile-phone" style="font-size:38px;color:#ffffff"></i>&nbsp; +91 9823260303, +91 9604508303</p>
+
+								<p class="contacts" style="color:#ffffff;"> <i class="fa fa-envelope" style="font-size:28px;color:#ffffff"></i> <a href="mailto: mail@kunalpadole.com" style="color:#ffffff"> &nbsp; mail@kunalpadole.com</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto: mail@kunalpadole.com" style="color:#ffffff">&nbsp;&nbsp;  yuvafoundation11@gmail.com</a></p>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.908867625259!2d79.1004943644088!3d21.116199140164593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf514a1bcc25%3A0x36f848c01290cb!2sYUVA%20Foundation!5e0!3m2!1sen!2sin!4v1601465244764!5m2!1sen!2sin" width="600" height="160" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+							</div>
+
+						</aside>
+						<!--<h3>Social</h3>
+								<ul class="social-links">
+									<li class="facebook"><a target="_blank" href="https://www.facebook.com/yuvafoundations"><i class="fa fa-facebook"></i></a></li>
+								</ul>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
+
+			<!-- .subfooter start --> 
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Copyright © 2017-2020 YUVA Foundation  Design By <a target="_blank" href="http://Softsysworld.com/">Softsysworld.com</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .subfooter end -->
+<center><span> Visitor Counter:<div id="sfckeb4k4yaxkykjg3gaac63a4l2yxlmprn"></div>
+<script type="text/javascript" src="https://counter11.stat.ovh/private/counter.js?c=keb4k4yaxkykjg3gaac63a4l2yxlmprn&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="hit counter"><img src="https://counter11.stat.ovh/private/freecounterstat.php?c=keb4k4yaxkykjg3gaac63a4l2yxlmprn" border="0" title="hit counter" alt="hit counter"></a></noscript></center>
+
+		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script>
+		$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+
+});
+		</script>
+
+	</body>
+</html>

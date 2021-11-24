@@ -505,7 +505,7 @@ About
 .stroke-text {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ddd;
+  -webkit-text-stroke-color: #242222;
   font-size: 120px;
   font-weight: 800;
   text-transform: uppercase;
@@ -619,7 +619,7 @@ Features
 -------------------------------*/
 .feature-box {
   padding: 40px;
-  background: #f8f9fa;
+  background: #77797a;
   transition: all .35s ease;
 }
 
